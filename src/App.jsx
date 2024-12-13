@@ -1,5 +1,17 @@
-//import "./styles.css"
+import React from 'react'
+import './App.css';
+function App() {
+  return (
+    <>
+    <div className='header'> 
+      <h1>JOHN OSCAR ROBLE </h1>
+      <h3>Software Engineer</h3>
 
-export default function App(){
-  return "Hi"
+    </div>
+   
+    </>
+
+  )
 }
+
+export default App
