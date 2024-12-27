@@ -7,9 +7,9 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import InfoIcon from '@mui/icons-material/Info'; // Icon for "About"
 import FolderIcon from '@mui/icons-material/Folder'; // Icon for "Projects"
 import EmailIcon from '@mui/icons-material/Email'; // Icon for "Contact"
-import About from './Components/About';
-import Projects from './Components/Projects';
-import Contact from './Components/Contact';
+import About from './Pages/About';
+import Projects from './Pages/Projects';
+import Contact from './Pages/Contact';
 import { Email } from '@mui/icons-material';
 
 function App() {
