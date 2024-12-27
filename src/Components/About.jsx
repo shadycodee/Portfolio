@@ -1,8 +1,21 @@
 import React from 'react'
+import Image from '../assets/profile_pixel.png';
 
 function About() {
   return (
-    <div>Hello! I’m currently a 4th-year BSIT student with a passion for building and creating. My love for technology has driven me to explore programming, with Python and SQL being my favorite tools for solving problems and developing projects. In my free time, I enjoy dabbling in pixel art, where I’m still practicing and honing my skills—it’s a fun and creative outlet that challenges me in a different way. I’m always eager to learn, grow, and embrace new challenges as I continue my journey in the tech world.</div>
+    <>
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '50px',
+            fontSize: '30px',
+            color: 'white',
+        }}>
+            <img src={Image} alt="About Me" style={{ width: '250px', borderRadius: '10px', border: '4px solid black'  }} />
+           <p> I’m a 4th-year BSIT student who loves building apps and enjoys creating pixel art in my free time.</p>
+        </div>
+
+    </>
   )
 }
 
