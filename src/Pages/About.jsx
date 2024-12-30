@@ -16,7 +16,7 @@ function About() {
 
         }}>
             <img src={Image} alt="About Me" style={{ width: '250px', borderRadius: '50%', border: '4px solid transparent', marginRight: '30px' }} />
-           <p> I’m a 4th-year BSIT student who loves building apps and enjoys creating pixel(newbie). <br /> <br />I love Python and SQL!</p>
+           <p> I’m a 4th-year BSIT student who loves building apps and enjoys creating pixel(still a newbie). <br /> <br />I love Python and SQL!</p>
         </div>
 
     </>
