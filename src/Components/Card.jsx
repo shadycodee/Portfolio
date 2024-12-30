@@ -1,9 +1,9 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Box, Link } from '@mui/material';
 
-const ProjectCard = ({ image, title, description, technologies }) => {
+const ProjectCard = ({ image, title, description, technologies, githubLink }) => {
     return (
-        <Card sx={{ display: 'flex', margin: 2 }}>
+        <Card sx={{ display: 'flex', margin: 2, padding: 1 }}>
             <CardMedia
                 component="img"
                 sx={{ width: 151 }}
@@ -21,6 +21,13 @@ const ProjectCard = ({ image, title, description, technologies }) => {
                     <Typography variant="body2" color="text.secondary">
                         Technologies: {technologies.join(', ')}
                     </Typography>
+                    {githubLink && (
+                        <Typography variant="body2" color="text.secondary">
+                        <Link href={githubLink} target="_blank" rel="noopener">
+                            View on GitHub
+                        </Link>
+                        </Typography>
+                    )}
                 </CardContent>
             </Box>
         </Card>

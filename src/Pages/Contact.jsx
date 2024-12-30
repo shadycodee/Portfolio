@@ -8,10 +8,8 @@ const Contact = () => {
       display="flex" 
       flexDirection="column" 
       alignItems="center" 
-    
-      height="100vh"
     >
-      <h4 style={{color: 'white'}}> Connect with me</h4>
+      <h4 style={{color: 'white', marginBottom: 10}}> Connect with me</h4>
        
       
       <Box>

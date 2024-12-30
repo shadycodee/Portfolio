@@ -1,25 +1,15 @@
-import React from 'react'
-import ProjectCard from '../Components/Card'
+import React from 'react';
+import ProjectCard from '../Components/Card';
+import project1 from '../assets/project1.png';
 
 function Projects() {
   const projects = [
     {
-      image: 'https://via.placeholder.com/150',
+      image: project1,
       title: 'LIC Connect',
       description: 'Streamlining Computer Access with an Automated Login System and Tracking',
-      technologies: ['React', 'Django', 'SQL', 'Tkinter']
-    },
-    {
-      image: 'https://via.placeholder.com/150',
-      title: 'Project Two',
-      description: 'Description for project two.',
-      technologies: ['React', 'Node.js', 'Express']
-    },
-    {
-      image: 'https://via.placeholder.com/150',
-      title: 'Project Three',
-      description: 'Description for project three.',
-      technologies: ['Angular', 'Firebase']
+      technologies: ['React', 'Django', 'SQL', 'Tkinter'],
+      githubLink: 'https://github.com/annejenel/LIC'
     }
   ];
 
@@ -33,8 +23,10 @@ function Projects() {
           title={project.title}
           description={project.description}
           technologies={project.technologies}
+          githubLink={project.githubLink}
         />
       ))}
+      <h4 style={{fontSize: '30px', textAlign: 'center', color: 'white'}}>One project for now, but more are on the way!...</h4>
     </div>
      
     </>

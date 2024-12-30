@@ -37,10 +37,12 @@ function App() {
     </div>
     <Paper elevation={3} 
     sx={{backgroundColor: '#4d82d6', 
-        height: '100vh',
+        height: '70vh',
         marginLeft: '20%',
-        marginRight: '20%'}}>
-          <div className="tab-section">
+        marginRight: '20%',
+        borderRadius: '4px',
+         }}>
+        <div className="tab-section">
         <ButtonGroup variant="text" size="large" aria-label="Basic button group">
           <Button
             onClick={() => setActiveTab('about')}
