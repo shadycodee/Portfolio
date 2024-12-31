@@ -26,7 +26,7 @@ function Projects() {
           githubLink={project.githubLink}
         />
       ))}
-      <h4 style={{fontSize: '30px', textAlign: 'center', color: 'white'}}>One project for now, but more are on the way!...</h4>
+      <h4 style={{fontSize: '30px', textAlign: 'center', color: 'white'}}>One project for now, still under construction...</h4>
     </div>
      
     </>
