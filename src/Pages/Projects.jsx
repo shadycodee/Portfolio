@@ -1,33 +1,42 @@
 import React from 'react';
 import ProjectCard from '../Components/Card';
-import project1 from '../assets/project1.png';
+import { Grid2 } from '@mui/material';
+
 
 function Projects() {
   const projects = [
     {
-      image: project1,
       title: 'LIC Connect',
-      description: 'Streamlining Computer Access with an Automated Login System and Tracking',
-      technologies: ['React', 'Django', 'SQL', 'Tkinter'],
-      githubLink: 'https://github.com/annejenel/LIC'
-    }
+      description: 'A web application and a GUI application streamlining computer access with an automated login system and tracking.',
+      techStack: ['reactjs', 'django', 'python', 'mysql'],
+      link: 'https://github.com/annejenel/LIC'
+    },
+    {
+      title: 'TransLens',
+      description: 'An app that uses OCR and NLP to capture text from images, extract it, and translate it into a target language.',
+      techStack: ['python'],
+      link: 'https://github.com/shadycodee/TransLens'}
   ];
 
   return (
     <>
-    <div style={{ marginLeft: '10%', marginRight: '10%', marginTop: '50px'}}>
-    {projects.map((project, index) => (
-        <ProjectCard 
-          key={index}
-          image={project.image}
-          title={project.title}
-          description={project.description}
-          technologies={project.technologies}
-          githubLink={project.githubLink}
-        />
-      ))}
-      <h4 style={{fontSize: '30px', textAlign: 'center', color: 'white'}}>One project for now, still under construction...</h4>
+    <div style={{justifyContent: 'center', display: 'flex'}}>
+    <Grid2 container direction="row" spacing={2} alignItems="center">
+        {projects.map((project, index) => (
+          <Grid2 item key={index}>
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              link={project.link}
+            />
+          </Grid2>
+        ))}
+      </Grid2>
     </div>
+    
+      {/* <h4 style={{fontSize: '30px', textAlign: 'center', color: 'white'}}>One project for now, still under construction!...</h4> */}
+   
      
     </>
   )

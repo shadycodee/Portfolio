@@ -42,19 +42,22 @@ body {
 }
 
 h1 {
-    font-size: 120px;
+    font-size: clamp(50px, 10vw, 120px);
+    /* Min: 60px, Preferred: 10vw, Max: 120px */
     margin: 0;
 }
 
 h3 {
+    font-size: clamp(40px, 6vw, 80px);
+    /* Min: 40px, Preferred: 6vw, Max: 80px */
     margin: 0;
-    font-size: 80px;
 }
 
 h4 {
-    font-size: 60px;
-
+    font-size: clamp(30px, 4vw, 60px);
+    /* Min: 30px, Preferred: 4vw, Max: 60px */
 }
+
 
 .tab-section {
     background-color: white;
