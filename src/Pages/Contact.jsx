@@ -1,9 +1,24 @@
 import React from 'react';
-import { Box, Typography, IconButton } from '@mui/material';
+import { Box, Button, IconButton } from '@mui/material';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const Contact = () => {
+  const handleDownload = () => {
+    // Replace with the correct path to your resume in the public folder
+    const resumeUrl = "/Resume_Roble.pdf"; // Example: public/resume.pdf
+
+    // Create a temporary anchor to initiate download
+    const a = document.createElement("a");
+    a.href = resumeUrl;
+    a.download = "John_Roble_Resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+  
   return (
+    <>
     <Box 
       display="flex" 
       flexDirection="column" 
@@ -36,7 +51,14 @@ const Contact = () => {
           <Email fontSize="large" />
         </IconButton>
       </Box>
+      <Button variant='contained' startIcon={<DownloadIcon />}
+      onClick={handleDownload} sx={{marginTop: 5, backgroundColor: 'white', color: '#4D82D6'}}>
+      Download Resume
+    </Button>
     </Box>
+    
+    </>
+    
   );
 };
 
