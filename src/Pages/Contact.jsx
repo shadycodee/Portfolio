@@ -24,7 +24,7 @@ const Contact = () => {
       flexDirection="column" 
       alignItems="center" 
     >
-      <h4 style={{color: 'white', marginBottom: 10}}> Connect with me</h4>
+      <h2 style={{color: 'white', marginBottom: 10, fontSize: '50px'}}> Connect with me</h2>
        
       
       <Box>
@@ -52,7 +52,7 @@ const Contact = () => {
         </IconButton>
       </Box>
       <Button variant='contained' startIcon={<DownloadIcon />}
-      onClick={handleDownload} sx={{marginTop: 5, backgroundColor: 'white', color: '#4D82D6'}}>
+      onClick={handleDownload} sx={{marginTop: 5, backgroundColor: 'white', color: '#4D82D6', marginBottom: 5}}>
       Download Resume
     </Button>
     </Box>

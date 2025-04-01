@@ -3,24 +3,35 @@ import Image from '../assets/profile_pixel.png';
 
 function About() {
   return (
-    <>
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            padding: '50px',
-            fontSize: '30px',
-            color: 'white',
-            alignItems: 'center',
-            marginLeft: '10%',
-            marginRight: '10%',
+    <div className="flex flex-col md:flex-row items-center justify-center p-8 text-white space-y-8 md:space-y-0 md:space-x-8">
+      {/* Image Section */}
+      <img
+        src={Image}
+        alt="About Me"
+        className="w-40 h-40 md:w-64 md:h-64 rounded-full object-cover"
+      />
+      
+      {/* Paragraph Section */}
+      <div className="flex flex-col items-center md:items-start">
+        <p className="text-center md:text-left text-lg md:text-xl leading-relaxed">
+          I have experience working with confidential data, helping companies analyze and derive valuable insights to drive better decisions. However, my true passion lies in software engineering and QA. I am constantly exploring my curiosity through technology, aiming to create imaginative solutions and ensuring the highest quality in all aspects of my work.
+        </p>
 
-        }}>
-            <img src={Image} alt="About Me" style={{ width: '250px', borderRadius: '50%', border: '4px solid transparent', marginRight: '30px' }} />
-           <p> I’m a 4th-year BSIT student who loves building apps and enjoys creating pixel(still a newbie). <br /> <br />I love Python and SQL!</p>
+        {/* Skills Section */}
+        <div className="mt-8">
+          <h3 className="text-xl font-bold mb-4">Skills</h3>
+          <div className="space-y-4">
+            <div>
+              <span className="font-semibold">Languages:</span> HTML, CSS, Python, SQL, C, JavaScript, Java, Kotlin
+            </div>
+            <div>
+              <span className="font-semibold">Libraries:</span> React, Django, Flask, Tailwind
+            </div>
+          </div>
         </div>
-
-    </>
-  )
+      </div>
+    </div>
+  );
 }
 
 export default About

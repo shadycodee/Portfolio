@@ -28,22 +28,18 @@ function App() {
     }
   };
   return (
-    <>
-    <div className='header'> 
-      <h1>JOHN OSCAR ROBLE </h1>
-      <h3>Developer</h3>
+    <div className='my-500'>
+    <div className='text-center'> 
+      <h1 className='text-7xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white'>JOHN ROBLE </h1>
+      <h3 className='text-5xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Developer</h3>
       
 
     </div>
     <Paper elevation={3} 
-    sx={{backgroundColor: '#4d82d6', 
-        height: 'clamp(50vh, 70vh, 90vh)',
-        width: 'clamp(60%, 70%, 80%)',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        borderRadius: '4px',
-        padding: '0'
-         }}>
+    sx={{ backgroundColor: '#4d82d6',
+          padding: '0px',
+    }}
+      className='w-full max-w-6xl mx-auto p-0 md:px-8 lg:px-12'>
         <div className="tab-section">
         <ButtonGroup variant="text" size="large" aria-label="Basic button group" className='button-group'>
           <Button
@@ -77,7 +73,7 @@ function App() {
         </Paper>
 
    
-    </>
+    </div>
 
   )
 }
