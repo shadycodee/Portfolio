@@ -2,7 +2,7 @@ import React from 'react';
 import { Github } from "lucide-react";
 
 const TechBadge = ({ name }) => (
-  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+  <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-sm md:text-base lg:text-lg font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
     {name}
   </span>
 );

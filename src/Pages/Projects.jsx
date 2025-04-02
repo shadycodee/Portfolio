@@ -35,6 +35,7 @@ const Projects = () => {
                 {project.description}
               </p>
             }
+            
             />
           </div>
         ))}
