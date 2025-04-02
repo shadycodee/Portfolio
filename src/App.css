@@ -87,3 +87,15 @@ body {
     display: flex;
     flex-wrap: nowrap;
 }
+
+.button-group .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .button-group .tab {
+      min-width: 50px; /* Adjust button size for mobile */
+    }
+  }
