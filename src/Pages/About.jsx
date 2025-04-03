@@ -15,7 +15,7 @@ function About() {
       <div className="flex flex-col items-center md:items-start">
       <h3 className="text-4xl font-bold mb-4 text-left md:text-left">About Me</h3>
         <p className="text-center md:text-left text-xl md:text-2xl leading-relaxed">
-          I have experience working with confidential data, helping companies analyze and derive valuable insights to drive better decisions. However, my true passion lies in software engineering and QA. I am constantly exploring my curiosity through technology, aiming to create imaginative solutions and ensuring the highest quality in all aspects of my work.
+          I have experience working with confidential data, helping companies analyze and derive valuable insights to drive better decisions. However, my true passion lies in software engineering and QA. I am constantly exploring my curiosity through technology and aiming to create eccentric discovery.
         </p>
 
         {/* Skills Section */}
