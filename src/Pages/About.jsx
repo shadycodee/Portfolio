@@ -26,9 +26,13 @@ function About() {
               <span className="font-semibold">Languages:</span> HTML, CSS, Python, SQL, C, JavaScript, Java, Kotlin
             </div>
             <div>
-              <span className="font-semibold">Libraries:</span> React, Django, Flask, Tailwind
+              <span className="font-semibold">Libraries:</span> React, Django, Flask, Tailwind, Selenium
+            </div>
+            <div>
+               <span className="font-semibold">Tools & Platforms:</span> Git, Heroku, Firebase, TestRail, Postman, Jira
             </div>
           </div>
+         
         </div>
       </div>
     </div>
