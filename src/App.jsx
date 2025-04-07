@@ -32,7 +32,7 @@ function App() {
     <div className='my-500'>
       <div className='text-center'>
         <h1 className='text-7xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white'>JOHN ROBLE</h1>
-        <h3 className='text-5xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Developer</h3>
+        <h3 className='text-5xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-white'>Software QA Tester</h3>
       </div>
       <Paper
         elevation={3}
